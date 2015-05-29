@@ -10,7 +10,7 @@ Feature: I would like to edit amphibians
     Then I should not see "<amphibians>"
     And I follow "Create a new entry"
     Then I should see "Amphibians creation"
-    When I fill in "Name" with "<amphibians>"
+    When I fill in "Amphibians" with "<amphibians>"
     And I fill in "Age" with "<age>"
     And I press "Create"
     Then I should see "<amphibians>"
@@ -20,7 +20,6 @@ Feature: I would like to edit amphibians
     | amphibians       | age |
     | Salamander       |  15 |
     | Newt             |  10 |
-    | Toad             |  8  |
 
 
 
@@ -35,7 +34,7 @@ Feature: I would like to edit amphibians
     When I follow "<old-amphibians>"
     Then I should see "<old-amphibians>"
     When I follow "Edit"
-    And I fill in "Name" with "<new-amphibians>"
+    And I fill in "Amphibians" with "<new-amphibians>"
     And I fill in "Age" with "<new-age>"
     And I press "Update"
     And I follow "Back to the list"
@@ -66,5 +65,4 @@ Feature: I would like to edit amphibians
     | amphibians         |
     | Spadefoot          |
     | Tree frog          |
-    | Toad               |
 
